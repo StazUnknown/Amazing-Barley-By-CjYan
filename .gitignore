@@ -1,0 +1,21 @@
+# Ignore build folders
+bin/
+obj/
+
+# Ignore user-specific files
+*.user
+*.rsuser
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Ignore publish output
+/publish/
+/dist/
+/out/
+
+# Ignore temp files
+.vs/
+.vscode/
+*.tmp
+*.log
