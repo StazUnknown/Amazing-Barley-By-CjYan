@@ -1,8 +1,350 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Home - Amazing Barley";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<!-- Hero Section -->
+<section id="hero" class="min-vh-100 d-flex align-items-center" style="background: linear-gradient(135deg, rgba(25, 135, 84, 0.1), rgba(25, 135, 84, 0.05));">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="d-inline-flex align-items-center bg-success bg-opacity-10 rounded-pill px-3 py-2 mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-success me-2">
+                        <path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"></path>
+                    </svg>
+                    <span class="text-success fw-medium">100% Organic & Natural</span>
+                </div>
+
+                <h1 class="display-4 fw-bold text-success mb-4">
+                    Amazing Barley
+                </h1>
+
+                <p class="lead text-muted mb-4">
+                    Pure Wellness from Nature's Superfood
+                </p>
+
+                <p class="text-muted mb-5">
+                    Discover the power of organic barley grass with our premium supplements.
+                    Packed with essential nutrients, vitamins, and minerals to fuel your healthy lifestyle.
+                </p>
+
+                <div class="d-flex flex-wrap gap-3 mb-5">
+                    <a href="#products" class="btn btn-success btn-lg px-4 py-2">Shop Products</a>
+                    <a href="#benefits" class="btn btn-outline-success btn-lg px-4 py-2">Learn Benefits</a>
+                </div>
+
+                <div class="d-flex flex-wrap gap-4 text-muted">
+                    <div class="d-flex align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-success me-2">
+                            <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
+                        </svg>
+                        <span>Non-GMO Certified</span>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-success me-2">
+                            <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path>
+                        </svg>
+                        <span>Organic Farming</span>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-success me-2">
+                            <path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"></path>
+                        </svg>
+                        <span>Lab Tested Purity</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 text-center">
+                <div class="bg-success bg-opacity-10 rounded-3 p-5 mt-5 mt-lg-0">
+                    <h3 class="text-success mb-3">Premium Barley Grass</h3>
+                    <p class="text-muted mb-0">Nature's most complete superfood</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Products Section -->
+<section id="products" class="py-5 bg-light">
+    <div class="container">
+        <div class="text-center mb-5">
+            <span class="badge bg-success bg-opacity-10 text-success fs-6 mb-3">Premium Products</span>
+            <h2 class="display-5 fw-bold text-success mb-3">Choose Your Wellness Format</h2>
+            <p class="lead text-muted mx-auto" style="max-width: 600px;">
+                Pure organic barley grass in convenient forms to fit your lifestyle and wellness goals.
+            </p>
+        </div>
+
+        <div class="row g-4">
+            <!-- Product 1 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 product-card border-0 shadow-sm">
+                    <div class="position-relative">
+                        <img src="https://via.placeholder.com/300x200/10b981/ffffff?text=Barley+Powder" class="card-img-top" alt="Barley Greens Powder">
+                        <span class="badge bg-success position-absolute top-0 start-0 m-3">Best Seller</span>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title text-success">Barley Greens Powder</h5>
+                        <p class="card-text text-muted">Premium organic barley grass powder. Rich in chlorophyll, vitamins, and minerals for daily nutrition.</p>
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="text-warning">
+                                ★★★★☆
+                            </div>
+                            <small class="text-muted ms-2">4.9 (234 reviews)</small>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-transparent border-0 d-flex justify-content-between align-items-center">
+                        <div>
+                            <span class="h4 text-success fw-bold">$24.99</span>
+                            <span class="text-muted text-decoration-line-through ms-2">$34.99</span>
+                        </div>
+                        <button class="btn btn-success">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 product-card border-0 shadow-sm">
+                    <div class="position-relative">
+                        <img src="https://via.placeholder.com/300x200/059669/ffffff?text=Barley+Capsules" class="card-img-top" alt="Barley Capsules">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title text-success">Barley Capsules</h5>
+                        <p class="card-text text-muted">Convenient capsules for on-the-go nutrition. Same powerful benefits in an easy-to-take format.</p>
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="text-warning">
+                                ★★★★☆
+                            </div>
+                            <small class="text-muted ms-2">4.7 (189 reviews)</small>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-transparent border-0 d-flex justify-content-between align-items-center">
+                        <div>
+                            <span class="h4 text-success fw-bold">$19.99</span>
+                        </div>
+                        <button class="btn btn-success">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 product-card border-0 shadow-sm">
+                    <div class="position-relative">
+                        <img src="https://via.placeholder.com/300x200/047857/ffffff?text=Barley+Vitamin+C" class="card-img-top" alt="Barley + Vitamin C">
+                        <span class="badge bg-success position-absolute top-0 start-0 m-3">New</span>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title text-success">Barley + Vitamin C</h5>
+                        <p class="card-text text-muted">Enhanced formula combining barley grass with natural vitamin C for immune system support.</p>
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="text-warning">
+                                ★★★★☆
+                            </div>
+                            <small class="text-muted ms-2">4.8 (156 reviews)</small>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-transparent border-0 d-flex justify-content-between align-items-center">
+                        <div>
+                            <span class="h4 text-success fw-bold">$29.99</span>
+                        </div>
+                        <button class="btn btn-success">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Benefits Section -->
+<section id="benefits" class="py-5">
+    <div class="container">
+        <div class="text-center mb-5">
+            <span class="badge bg-success bg-opacity-10 text-success fs-6 mb-3">Health Benefits</span>
+            <h2 class="display-5 fw-bold text-success mb-3">Why Choose Barley Grass?</h2>
+            <p class="lead text-muted mx-auto" style="max-width: 700px;">
+                Barley grass is one of nature's most complete superfoods, packed with essential nutrients
+                that support your overall health and vitality.
+            </p>
+        </div>
+
+        <div class="row g-4">
+            <!-- Benefit 1 -->
+            <div class="col-lg-3 col-md-6">
+                <div class="card h-100 border-0 shadow-sm text-center">
+                    <div class="card-body">
+                        <div class="bg-success bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-success">
+                                <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
+                            </svg>
+                        </div>
+                        <h5 class="card-title">Energy Boost</h5>
+                        <p class="card-text text-muted">Natural energy from chlorophyll and B-vitamins to fuel your active lifestyle</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Benefit 2 -->
+            <div class="col-lg-3 col-md-6">
+                <div class="card h-100 border-0 shadow-sm text-center">
+                    <div class="card-body">
+                        <div class="bg-success bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-success">
+                                <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
+                            </svg>
+                        </div>
+                        <h5 class="card-title">Immune Support</h5>
+                        <p class="card-text text-muted">Antioxidants and vitamins A, C, E help strengthen your body's natural defenses</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Benefit 3 -->
+            <div class="col-lg-3 col-md-6">
+                <div class="card h-100 border-0 shadow-sm text-center">
+                    <div class="card-body">
+                        <div class="bg-success bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-success">
+                                <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path>
+                            </svg>
+                        </div>
+                        <h5 class="card-title">Heart Health</h5>
+                        <p class="card-text text-muted">Supports cardiovascular health with potassium, magnesium, and fiber</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Benefit 4 -->
+            <div class="col-lg-3 col-md-6">
+                <div class="card h-100 border-0 shadow-sm text-center">
+                    <div class="card-body">
+                        <div class="bg-success bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-success">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <circle cx="12" cy="12" r="6"></circle>
+                                <circle cx="12" cy="12" r="2"></circle>
+                            </svg>
+                        </div>
+                        <h5 class="card-title">Detox Support</h5>
+                        <p class="card-text text-muted">Chlorophyll helps cleanse and detoxify your body naturally</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="py-5 bg-light">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <span class="badge bg-success bg-opacity-10 text-success fs-6 mb-3">Our Story</span>
+                <h2 class="display-5 fw-bold text-success mb-4">Committed to Your Wellness</h2>
+                <p class="lead text-muted mb-4">
+                    Amazing Barley was founded on the belief that nature provides the best solutions for optimal health.
+                    We source only the finest organic barley grass, harvested at peak nutrition and processed with care
+                    to preserve all the natural goodness.
+                </p>
+
+                <div class="row mb-4">
+                    <div class="col-sm-6 mb-3">
+                        <div class="d-flex align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-success me-3">
+                                <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                                <path d="m9 11 3 3L22 4"></path>
+                            </svg>
+                            <div>
+                                <h6 class="fw-bold mb-1">Organic Farming Practices</h6>
+                                <p class="text-muted mb-0 small">Grown without pesticides or harmful chemicals</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 mb-3">
+                        <div class="d-flex align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-success me-3">
+                                <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                                <path d="m9 11 3 3L22 4"></path>
+                            </svg>
+                            <div>
+                                <h6 class="fw-bold mb-1">Third-Party Testing</h6>
+                                <p class="text-muted mb-0 small">Every batch tested for purity and potency</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#contact" class="btn btn-success btn-lg">Learn More About Us</a>
+            </div>
+
+            <div class="col-lg-6">
+                <!-- About content image/illustration would go here -->
+                <div class="bg-success bg-opacity-10 rounded-3 p-5 text-center mt-5 mt-lg-0">
+                    <h4 class="text-success mb-3">Our Mission</h4>
+                    <p class="text-muted mb-0">
+                        To make premium wellness accessible to everyone through the power of organic barley grass.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-5">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="display-5 fw-bold text-success mb-3">Get in Touch</h2>
+            <p class="lead text-muted mx-auto" style="max-width: 600px;">
+                Have questions about our products? We're here to help you on your wellness journey.
+            </p>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body p-4">
+                        <form>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="name" class="form-label">Full Name</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Enter your full name" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="email" class="form-label">Email Address</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Enter your email address" required>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" rows="5" placeholder="Tell us how we can help you..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-success btn-lg w-100">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@section Scripts {
+    <script>
+        // Add any page-specific JavaScript here
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add smooth animations to product cards
+            const productCards = document.querySelectorAll('.product-card');
+            productCards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-5px)';
+                    this.style.transition = 'transform 0.3s ease';
+                });
+
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                });
+            });
+        });
+    </script>
+}
