@@ -46,6 +46,45 @@ button.accept-policy {
   position: static;
 }
 
+/* ===== HERO SECTION STYLES ===== */
+.hero-section {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.466), rgb(255, 255, 255)), url('/asset/img/Messenger_creation_2199283443892647.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+.image-barley-sachet {
+  background-size: 100% auto;
+}
+
+/* ===== SECTION SUBTITLE STYLES ===== */
+.section-subtitle {
+  max-width: 600px;
+}
+
+.benefits-subtitle {
+  max-width: 700px;
+}
+
+.contact-subtitle {
+  max-width: 600px;
+}
+
+/* ===== BENEFIT ICON STYLES ===== */
+.benefit-icon {
+  background-color: rgba(25, 135, 84, 0.1);
+  width: 60px;
+  height: 60px;
+}
+
+/* ===== ABOUT MISSION STYLES ===== */
+.about-mission {
+  background-color: rgba(25, 135, 84, 0.1);
+}
+
+
+.mg-bg-card-content {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.027));
+}
 
 /* Amazing Barley Custom Styles */
 .bg-gradient-primary {

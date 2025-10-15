@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/Amazing_Barley.styles.css" asp-append-version="true" />
+    @RenderSection("Styles", required: false)
 </head>
 <body>
     <!-- Header -->
@@ -123,7 +124,7 @@
             </div>
             <hr class="my-4 border-secondary">
             <div class="text-center">
-                <p class="mb-0">&copy; 2025 Amazing Barley. All rights reserved.</p>
+                <p class="mb-0 text-white-50 text-decoration-none">&copy; 2025 Amazing Barley. All rights reserved.</p>
             </div>
         </div>
     </footer>
