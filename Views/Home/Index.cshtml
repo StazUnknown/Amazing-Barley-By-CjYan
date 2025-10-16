@@ -66,7 +66,7 @@
         </div>
 
         <div class="row g-4">
-            <!-- Product 1 -->
+            @* <!-- Product 1 -->
             <div class="col-lg-4 col-md-6">
                 <div class="card h-100 product-card border-0 shadow-sm">
                     <div class="position-relative">
@@ -91,8 +91,8 @@
                         <button class="btn btn-success">Add to Cart</button>
                     </div>
                 </div>
-            </div>
 
+            </div>
             <!-- Product 2 -->
             <div class="col-lg-4 col-md-6">
                 <div class="card h-100 product-card border-0 shadow-sm">
@@ -117,7 +117,6 @@
                     </div>
                 </div>
             </div>
-
             <!-- Product 3 -->
             <div class="col-lg-4 col-md-6">
                 <div class="card h-100 product-card border-0 shadow-sm">
@@ -142,7 +141,154 @@
                         <button class="btn btn-success">Add to Cart</button>
                     </div>
                 </div>
+            </div> *@
+                    <div class="product-slider-container">
+            <button class="slider-btn prev" onclick="scrollSlider(-1)">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                </svg>
+            </button>
+
+            <div class="product-slider" id="productSlider">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="position-relative">
+                            <img src="https://via.placeholder.com/300x200/10b981/ffffff?text=Barley+Powder" class="card-img-top" alt="Barley Greens Powder">
+                            <span class="badge bg-success position-absolute top-0 start-0 m-3">Best Seller</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title text-success">Barley Greens Powder</h5>
+                            <p class="card-text text-muted">Premium organic barley grass powder. Rich in chlorophyll, vitamins, and minerals for daily nutrition.</p>
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="text-warning">
+                                    ★★★★☆
+                                </div>
+                                <small class="text-muted ms-2">4.9 (234 reviews)</small>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-transparent border-0 d-flex justify-content-between align-items-center">
+                            <div>
+                                <span class="h4 text-success fw-bold">$24.99</span>
+                                <span class="text-muted text-decoration-line-through ms-2">$34.99</span>
+                            </div>
+                            <button class="btn btn-success">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="position-relative">
+                            <img src="https://via.placeholder.com/300x200/059669/ffffff?text=Barley+Capsules" class="card-img-top" alt="Barley Capsules">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title text-success">Barley Capsules</h5>
+                            <p class="card-text text-muted">Convenient capsules for on-the-go nutrition. Same powerful benefits in an easy-to-take format.</p>
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="text-warning">
+                                    ★★★★☆
+                                </div>
+                                <small class="text-muted ms-2">4.7 (189 reviews)</small>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-transparent border-0 d-flex justify-content-between align-items-center">
+                            <div>
+                                <span class="h4 text-success fw-bold">$19.99</span>
+                            </div>
+                            <button class="btn btn-success">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="position-relative">
+                            <img src="https://via.placeholder.com/300x200/047857/ffffff?text=Barley+Vitamin+C" class="card-img-top" alt="Barley + Vitamin C">
+                            <span class="badge bg-success position-absolute top-0 start-0 m-3">New</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title text-success">Barley + Vitamin C</h5>
+                            <p class="card-text text-muted">Enhanced formula combining barley grass with natural vitamin C for immune system support.</p>
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="text-warning">
+                                    ★★★★☆
+                                </div>
+                                <small class="text-muted ms-2">4.8 (156 reviews)</small>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-transparent border-0 d-flex justify-content-between align-items-center">
+                            <div>
+                                <span class="h4 text-success fw-bold">$29.99</span>
+                            </div>
+                            <button class="btn btn-success">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Additional products to demonstrate the slider -->
+                <div class="product-card">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="position-relative">
+                            <img src="https://via.placeholder.com/300x200/10b981/ffffff?text=Barley+Tea" class="card-img-top" alt="Barley Tea">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title text-success">Barley Tea Blend</h5>
+                            <p class="card-text text-muted">Soothing herbal tea made from roasted barley. Naturally caffeine-free with a nutty flavor.</p>
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="text-warning">
+                                    ★★★★☆
+                                </div>
+                                <small class="text-muted ms-2">4.6 (142 reviews)</small>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-transparent border-0 d-flex justify-content-between align-items-center">
+                            <div>
+                                <span class="h4 text-success fw-bold">$14.99</span>
+                            </div>
+                            <button class="btn btn-success">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="position-relative">
+                            <img src="https://via.placeholder.com/300x200/059669/ffffff?text=Barley+Oil" class="card-img-top" alt="Barley Oil">
+                            <span class="badge bg-success position-absolute top-0 start-0 m-3">Limited</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title text-success">Barley Seed Oil</h5>
+                            <p class="card-text text-muted">Cold-pressed barley seed oil rich in antioxidants and fatty acids for skin and hair care.</p>
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="text-warning">
+                                    ★★★★☆
+                                </div>
+                                <small class="text-muted ms-2">4.5 (98 reviews)</small>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-transparent border-0 d-flex justify-content-between align-items-center">
+                            <div>
+                                <span class="h4 text-success fw-bold">$22.99</span>
+                            </div>
+                            <button class="btn btn-success">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
             </div>
+
+            <button class="slider-btn next" onclick="scrollSlider(1)">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                </svg>
+            </button>
+
+            <div class="slider-indicators" id="sliderIndicators">
+                <!-- Indicators will be generated by JavaScript -->
+            </div>
+        </div>
         </div>
     </div>
 </section>
@@ -313,3 +459,80 @@
         </div>
     </div>
 </section>
+
+<script>
+        const slider = document.getElementById('productSlider');
+        const indicatorsContainer = document.getElementById('sliderIndicators');
+        const cardWidth = 300 + 24; // card width + gap
+        let currentIndex = 0;
+
+        // Calculate how many cards are visible at once
+        function getVisibleCards() {
+            return Math.floor(slider.clientWidth / cardWidth);
+        }
+
+        // Create indicators based on number of cards
+        function createIndicators() {
+            const totalCards = slider.children.length;
+            const visibleCards = getVisibleCards();
+            const totalIndicators = Math.max(1, totalCards - visibleCards + 1);
+
+            indicatorsContainer.innerHTML = '';
+
+            for (let i = 0; i < totalIndicators; i++) {
+                const indicator = document.createElement('div');
+                indicator.className = 'slider-indicator';
+                if (i === 0) indicator.classList.add('active');
+                indicator.addEventListener('click', () => {
+                    goToSlide(i);
+                });
+                indicatorsContainer.appendChild(indicator);
+            }
+        }
+
+        // Scroll the slider
+        function scrollSlider(direction) {
+            const visibleCards = getVisibleCards();
+            const maxIndex = slider.children.length - visibleCards;
+
+            currentIndex += direction;
+
+            // Boundary checks
+            if (currentIndex < 0) currentIndex = 0;
+            if (currentIndex > maxIndex) currentIndex = maxIndex;
+
+            slider.scrollTo({
+                left: currentIndex * cardWidth,
+                behavior: 'smooth'
+            });
+
+            updateIndicators();
+        }
+
+        // Go to specific slide
+        function goToSlide(index) {
+            const visibleCards = getVisibleCards();
+            const maxIndex = slider.children.length - visibleCards;
+
+            currentIndex = Math.min(index, maxIndex);
+
+            slider.scrollTo({
+                left: currentIndex * cardWidth,
+                behavior: 'smooth'
+            });
+
+            updateIndicators();
+        }
+
+        // Update active indicator
+        function updateIndicators() {
+            const indicators = indicatorsContainer.querySelectorAll('.slider-indicator');
+            indicators.forEach((indicator, index) => {
+                indicator.classList.toggle('active', index === currentIndex);
+            });
+        }
+
+        // Initialize on load and resize
+        window.addEventListener('load', createIndicators);
+        window.addEventListener('resize', createIndicators);
+</script>

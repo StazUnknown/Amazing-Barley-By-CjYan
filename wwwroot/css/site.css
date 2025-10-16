@@ -51,6 +51,10 @@ button.accept-policy {
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0.466), rgb(255, 255, 255)), url('/asset/img/Messenger_creation_2199283443892647.jpeg');
   background-size: cover;
   background-position: center;
+  padding-top: 80px !important; /* Account for fixed navbar */
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
 }
 .image-barley-sachet {
   background-size: 100% auto;
@@ -80,7 +84,6 @@ button.accept-policy {
 .about-mission {
   background-color: rgba(25, 135, 84, 0.1);
 }
-
 
 .mg-bg-card-content {
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.027));
@@ -146,36 +149,303 @@ body {
   background-color: rgba(25, 135, 84, 0.1);
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .display-4 {
-    font-size: 2.5rem;
-  }
+/* ===== PRODUCT SLIDER STYLES ===== */
+.product-slider-container {
+    position: relative;
+    padding: 0 15px;
+    margin: 1rem 0;
+}
 
-  .display-5 {
-    font-size: 2rem;
-  }
+.product-slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+    padding: 1rem 0;
+    gap: 1rem;
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+}
 
-  .hero-section {
+.product-slider::-webkit-scrollbar {
+    display: none; /* Chrome, Safari and Opera */
+}
+
+.product-card {
+    flex: 0 0 auto;
+    width: 280px;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    transition: all 0.3s ease;
+}
+
+.slider-btn:hover {
+    background: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.slider-btn.prev {
+    left: 5px;
+}
+
+.slider-btn.next {
+    right: 5px;
+}
+
+.slider-indicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 0.5rem;
+}
+
+.slider-indicator {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #ddd;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.slider-indicator.active {
+    background-color: #10b981;
+}
+
+/* ===== RESPONSIVE ADJUSTMENTS ===== */
+
+/* Extra small devices (phones, 576px and down) */
+@media (max-width: 576px) {
+    /* Typography */
+    .display-4 {
+        font-size: 2rem !important;
+    }
+
+    .display-5 {
+        font-size: 1.75rem !important;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    .lead {
+        font-size: 1rem;
+    }
+
+    /* Hero section */
+    .hero-section {
+        text-align: center;
+        padding: 60px 0 40px !important;
+        min-height: auto;
+    }
+
+    .hero-section .d-flex.flex-wrap {
+        justify-content: center;
+    }
+
+    .hero-section .d-flex.flex-wrap.gap-4 {
+        justify-content: center;
+        gap: 1.5rem !important;
+    }
+
+    /* Navigation */
+    .navbar-brand {
+        font-size: 1.1rem;
+    }
+
+    .navbar-toggler {
+        padding: 0.25rem 0.5rem;
+        font-size: 0.875rem;
+    }
+
+    /* Product slider */
+    .product-slider-container {
+        padding: 0 10px;
+    }
+
+    .product-card {
+        width: 260px;
+    }
+
+    .slider-btn {
+        width: 32px;
+        height: 32px;
+    }
+
+    .slider-btn svg {
+        width: 14px;
+        height: 14px;
+    }
+
+    /* Benefits section */
+    .benefit-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .benefit-icon svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    /* Buttons */
+    .btn-lg {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    /* Footer */
+    .footer .row > div {
+        margin-bottom: 1.5rem;
+    }
+
+    /* General spacing */
+    .py-5 {
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+    }
+
+    .mb-5 {
+        margin-bottom: 2rem !important;
+    }
+
+    .mb-4 {
+        margin-bottom: 1.5rem !important;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .display-4 {
+        font-size: 2.25rem;
+    }
+
+    .display-5 {
+        font-size: 2rem;
+    }
+
+    .product-card {
+        width: 270px;
+    }
+
+    .hero-section {
+        padding-top: 70px !important;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .product-card {
+        width: 290px;
+    }
+
+    .hero-section {
+        padding-top: 76px !important;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .hero-section {
+        padding-top: 80px !important;
+    }
+}
+
+/* Fix for mobile navigation */
+.navbar-collapse {
     text-align: center;
-  }
-
-  body {
-    padding-top: 66px;
-  }
 }
 
-/* Custom button hover effects */
-.btn-success {
-  transition: all 0.3s ease;
+.navbar-nav .nav-item {
+    margin: 0.25rem 0;
 }
 
-.btn-success:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(25, 135, 84, 0.3);
+/* Improve touch targets for mobile */
+.btn, .nav-link, .slider-btn, .slider-indicator {
+    min-height: 44px; /* Minimum touch target size */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.btn-outline-success:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(25, 135, 84, 0.2);
+.slider-indicator {
+    min-height: 20px; /* Smaller for indicators */
+}
+
+/* Fix for iOS Safari 100vh issue */
+.hero-section {
+    min-height: -webkit-fill-available; /* For iOS Safari */
+    min-height: 100vh;
+}
+
+/* Prevent horizontal scrolling on mobile */
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* Improve image loading */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Better focus states for accessibility */
+.btn:focus, .nav-link:focus, .slider-btn:focus {
+    outline: 2px solid #198754;
+    outline-offset: 2px;
+}
+
+/* Loading improvements */
+.product-slider {
+    will-change: transform;
+}
+
+/* Fix for fixed navbar covering content */
+section {
+    scroll-margin-top: 80px; /* Height of your navbar */
+}
+
+/* Improve form elements on mobile */
+.form-control {
+    font-size: 16px; /* Prevents zoom on iOS */
+}
+
+/* Better card layouts on mobile */
+.card {
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* Ensure proper spacing in product cards */
+.card-body {
+    padding: 1.25rem;
+}
+
+.card-footer {
+    padding: 1rem 1.25rem;
 }
