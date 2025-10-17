@@ -61,7 +61,7 @@
                             <a class="nav-link text-dark" href="#contact">Contact</a>
                         </li>
                     </ul>
-                    <a href="#products" class="btn btn-success btn-sm">Shop Now</a>
+                    <a href="#products" id="shopCartButton" class="btn btn-success btn-sm">Shop Now</a>
                 </div>
             </div>
         </nav>
@@ -159,12 +159,21 @@
 
         // Back to top button
         const backToTopButton = document.getElementById('backToTop');
-
         window.addEventListener('scroll', function() {
             if (window.pageYOffset > 300) {
                 backToTopButton.style.display = 'block';
             } else {
                 backToTopButton.style.display = 'none';
+            }
+        });
+
+        // Shop Cart button visibility
+        const shopCartButton = document.getElementById('shopCartButton');
+        window.addEventListener('scroll', function() {
+            if (window.pageYOffset < 450) {
+                shopCartButton.style.display = 'block'; // show
+            } else {
+                shopCartButton.style.display = 'none'; // hide
             }
         });
 

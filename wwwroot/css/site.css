@@ -268,4 +268,17 @@ body {
     .product-card {
         width: 280px;
     }
+
+}
+
+#scrollBtn {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        padding: 10px 15px;
+        border: none;
+        background: #198754;
+        color: white;
+        border-radius: 50%;
+        cursor: pointer;
 }
