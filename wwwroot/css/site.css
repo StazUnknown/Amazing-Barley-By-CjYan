@@ -282,3 +282,73 @@ body {
         border-radius: 50%;
         cursor: pointer;
 }
+/* 
+#shopCartButton {
+    transition: all 0.3s ease;
+    min-width: 100px;
+}
+
+#shopCartButton.scrolled {
+    background: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+    min-width: auto;
+}
+
+#shopCartButton.scrolled::before {
+    content: '';
+    display: none;
+}
+
+#shopCartButton:not(.scrolled)::before {
+    content: 'Shop Now';
+}
+
+#shopCartButton.scrolled::after {
+    content: url('/asset/img/cart-shopping-svgrepo-com.png');
+    height: auto;
+    width: 100%;
+} */
+
+/* Shop Button Styles */
+#shopButtonText, #shopButtonIcon {
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+#shopButtonText:hover, #shopButtonIcon:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(25, 135, 84, 0.3);
+}
+
+/* Ensure proper navbar layout */
+.navbar-collapse {
+    display: flex !important;
+    align-items: center;
+}
+
+.navbar-nav {
+    margin-right: auto;
+}
+
+#shopButtonText, #shopButtonIcon {
+    margin-left: 1rem;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    #shopButtonText, #shopButtonIcon {
+        margin-left: 0;
+        margin-top: 0.5rem;
+    }
+    
+    .navbar-collapse {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .navbar-nav {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+}
